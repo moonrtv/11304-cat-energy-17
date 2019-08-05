@@ -1,0 +1,25 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.copyright__link {
+  color: #666666;
+
+  text-decoration: none;
+}
+
+.copyright__link,
+.copyright__logo {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 0 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 162px;
+  }
+}

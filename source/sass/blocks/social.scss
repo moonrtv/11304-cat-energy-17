@@ -1,0 +1,24 @@
+.social__list {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  padding: 10px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    display: flex;
+    align-content: center;
+  }
+
+  .social__list {
+    align-items: center
+  }
+}

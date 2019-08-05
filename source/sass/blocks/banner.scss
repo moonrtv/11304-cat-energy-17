@@ -1,0 +1,146 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 305px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #64a83b url("../img/index-background-mobile@1x.jpg") no-repeat center;
+    z-index: -1;
+  }
+
+  @include fields;
+}
+
+.banner__title {
+  font-size: 36px;
+  line-height: 36px;
+
+  text-align: center;
+}
+
+.banner__text {
+  font-size: 14px;
+  line-height: 14px;
+
+  text-transform: uppercase;
+}
+
+.banner__title,
+.banner__text {
+  margin: 0;
+}
+
+.banner__image {
+  margin: 0 auto;
+}
+
+.banner__title,
+.banner__text,
+.banner__image {
+  padding-top: 28px;
+}
+
+.banner__title,
+.banner__text,
+.banner__btn {
+  display: flex;
+  justify-content: center;
+
+  color: $light-title;
+}
+
+.banner__btn {
+  background-color: $btn-green;
+
+  padding: 14px 0;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: $tablet-width) {
+  .banner {
+    height: 852px;
+    margin-left: 120px;
+
+    &::before {
+      display: none;
+    }
+  }
+  .banner__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    text-align: left;
+
+    max-width: 427px;
+  }
+
+  .banner__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .banner__title,
+  .banner__text {
+    justify-content: flex-start;
+
+    color: $black-title;
+
+    padding-top: 45px;
+  }
+
+  .banner__btn {
+    margin-top: 48px;
+    padding: 16px 0;
+
+    max-width: 244px;
+  }
+
+  .banner__image {
+    position: absolute;
+    width: 680px;
+    left: -47px;
+    top: 220px;
+    z-index: -1;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .banner {
+    height: 581px;
+    max-width: 1300px;
+    position: relative;
+    padding: 45px 57px 0;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 696px;
+      right: 0;
+      top: -70px;
+      width: 50%;
+      background: #64a83b url("../img/index-background-desktop@1x.jpg") no-repeat center;
+      z-index: -1;
+    }
+  }
+
+  .banner__image {
+    position: absolute;
+    top: -32px;
+    left: 38%;
+    width: 546px;
+    z-index: 1;
+    margin: 0;
+  }
+}
