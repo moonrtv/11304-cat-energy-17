@@ -34,7 +34,7 @@
 }
 
 .product-card__info-value {
-  text-align: right
+  text-align: right;
 }
 
 .product-card__order {
@@ -102,6 +102,7 @@
 
   .product-card__list {
     flex-direction: column;
+
     @include fields(40px, 40px);
   }
 
@@ -130,9 +131,4 @@
 
     margin-bottom: 90px;
   }
-}
-
-
-@media (min-width: $desktop-width) {
-
 }

@@ -71,6 +71,7 @@
 .extras__info-volume,
 .extras__info-price {
   font-family: "Arial", sans-serif;
+
   @include title(14px, 14px);
   font-weight: 400;
 }
@@ -101,7 +102,6 @@
 
   .extras__info-title {
     @include title(20px, 20px);
-
   }
 
   .extras__info-volume,
@@ -126,14 +126,11 @@
   }
 
   .extras__wrapper-item {
-    margin-bottom: 0;
-  }
-
-  .extras__wrapper-item {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     max-width: 895px;
+    margin-bottom: 0;
   }
 
   .extras__item {
@@ -158,6 +155,7 @@
   .extras__info-value {
     display: flex;
     flex-grow: 1;
+    justify-content: flex-start;
   }
 
   .extras__info-volume {
@@ -168,12 +166,6 @@
   .extras__info-price {
     max-width: 80px;
     margin: 0;
-  }
-
-  .extras__info-value {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-start;
   }
 
   .extras__order {
