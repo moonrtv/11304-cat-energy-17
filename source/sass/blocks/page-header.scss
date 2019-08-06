@@ -1,0 +1,48 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  display: flex;
+  margin-left: 20px;
+
+  a {
+    align-content: center;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    width: 178px;
+    height: 58px;
+    margin-left: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1220px;
+  }
+
+  .page-header__logo {
+    width: 210px;
+    height: 70px;
+  }
+}

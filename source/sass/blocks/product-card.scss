@@ -1,0 +1,134 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__list {
+  display: flex;
+}
+
+.product-card__entry {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__img,
+.product-card__entry {
+  width: 50%;
+}
+
+.product-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  width: 84px;
+  margin: 0 0 18px;
+}
+
+.product-card__info {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product-card__info-value {
+  text-align: right;
+}
+
+.product-card__order {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  margin: 24px 0 0;
+}
+
+.product-card__btn {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: $light-title;
+  background-color: $btn-green;
+
+  width: 100%;
+  padding: 14px 0;
+
+  &--all {
+    color: $black-title;
+    background-color: $bg-grey;
+  }
+}
+
+.product-card__description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    background-color: $bg-grey;
+
+    &--all {
+      background-color: $bg-light;
+      border: 1px solid #e6e6e6;
+      box-sizing: border-box;
+    }
+  }
+
+  .product-card__entry {
+    justify-content: center;
+  }
+
+  .product-card__title {
+    display: flex;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    width: auto;
+    margin-top: 165px;
+  }
+
+  .product-card__info {
+    font-size: 16px;
+  }
+
+  .product-card__list {
+    flex-direction: column;
+
+    @include fields(40px, 40px);
+  }
+
+  .product-card__order {
+    padding: 35px 40px 40px;
+    margin: 0;
+  }
+
+  .product-card__img,
+  .product-card__entry {
+    width: 100%;
+  }
+
+  .product-card__info-name,
+  .product-card__info-value {
+    padding: 10px 0;
+  }
+
+  .product-card__img {
+    display: none;
+  }
+
+  .product-card__description {
+    font-size: 16px;
+    text-align: center;
+
+    margin-bottom: 90px;
+  }
+}
