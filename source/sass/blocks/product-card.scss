@@ -21,6 +21,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  color: $black-title;
   text-transform: uppercase;
 
   width: 84px;
@@ -58,7 +59,7 @@
   padding: 14px 0;
 
   &--all {
-    color: $black-title;
+    color: #444444;
     background-color: $bg-grey;
   }
 }
