@@ -41,17 +41,25 @@
 
   .contacts__title,
   .contacts__text {
-    max-width: 154px;
+    max-width: 160px;
   }
 
   .contacts__title {
+    font-size: 20px;
+    line-height: 25px;
+
     margin-left: 40px;
   }
 
   .contacts__text {
+    font-size: 16px;
     text-align: right;
 
     margin-right: 40px;
+  }
+
+  .contacts__text-city {
+    line-height: 3.5;
   }
 }
 
