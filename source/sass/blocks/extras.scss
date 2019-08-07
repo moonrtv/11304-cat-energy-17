@@ -18,10 +18,10 @@
   flex-direction: column;
 
   padding: 16px 0;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid #e6e6e6;
 
   &:last-child {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -88,6 +88,11 @@
     margin-bottom: 72px;
   }
 
+  .extras__item {
+    padding: 26px 40px 26px;
+    border: 1px solid #e6e6e6;
+  }
+
   .extras__title {
     @include title(36px, 36px);
     margin: 82px 0;
@@ -125,6 +130,18 @@
   .extras__wrapper {
     display: flex;
     margin-bottom: 86px;
+  }
+
+  .extras__item {
+    padding: 18px 0;
+
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #e6e6e6;
+
+    &:last-child {
+      border-bottom: 1px solid #e6e6e6;
+    }
   }
 
   .extras__wrapper-item {
