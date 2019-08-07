@@ -5,7 +5,7 @@
 
 .page-header__logo {
   display: flex;
-  margin-left: 20px;
+  margin: 12px 0 20px 18px;
 
   a {
     align-content: center;
@@ -24,21 +24,25 @@
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
-    width: 708px;
-    margin: 0 auto;
+    align-items: center;
+    width: auto;
+
+    @include fields(30px, 30px);
+    margin-top: 25px;
   }
 
   .page-header__logo {
     width: 178px;
     height: 58px;
-    margin-left: 0;
+    margin: 0;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1220px;
+    max-width: 1220px;
+    margin: 50px auto 0;
   }
 
   .page-header__logo {
