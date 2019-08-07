@@ -1,6 +1,8 @@
 .page-header {
   display: flex;
   flex-direction: column;
+
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo {
@@ -26,6 +28,7 @@
     flex-direction: row;
     align-items: center;
     width: auto;
+    border-bottom: none;
 
     @include fields(30px, 30px);
     margin-top: 25px;

@@ -67,21 +67,21 @@
 
 
 @media (min-width: $desktop-width) {
+  .site-list__item {
+    a {
+      color: $black-title;
+    }
+
+    // &--active.site-list--index a {
+    //   border-bottom: #ffffff;
+    // }
+  }
+
   .site-list {
     font-size: 20px;
 
     &--index a {
       color: #ffffff;
-    }
-  }
-
-  .site-list__item {
-    a {
-      color: $light-title;
-    }
-
-    &--active.site-list__item--index a {
-      border-bottom: #ffffff;
     }
   }
 }

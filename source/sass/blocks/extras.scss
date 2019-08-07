@@ -133,6 +133,12 @@
   }
 
   .extras__item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 895px;
+
     padding: 18px 0;
 
     border-left: none;
@@ -150,14 +156,6 @@
     flex-direction: column;
     max-width: 895px;
     margin-bottom: 0;
-  }
-
-  .extras__item {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    max-width: 895px;
   }
 
   .extras__info {
