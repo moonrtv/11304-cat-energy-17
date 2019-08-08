@@ -9,8 +9,19 @@
 .extras__title {
   @include title(24px, 24px);
   font-weight: 400;
+  position: relative;
   color: $black-title;
   margin: 32px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 3px;
+    background-color: #68b738;
+    top: 64%;
+    right: -20px;
+  }
 }
 
 .extras__item {
@@ -96,6 +107,23 @@
   .extras__title {
     @include title(36px, 36px);
     margin: 82px 0;
+    margin-left: 36px;
+
+    &::after {
+      width: 331px;
+      right: -30px;
+      top: 73%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+      top: 73%;
+      left: -66px;
+    }
   }
 
   .extras__info {
@@ -127,9 +155,30 @@
     @include fields(110px, 110px);
   }
 
+  .extras__title {
+    max-width: 1220px;
+    margin: 0 auto;
+
+    padding-bottom: 80px;
+
+    &::after {
+      width: 958px;
+      right: -127px;
+      top: 19%;
+    }
+
+    &::before {
+      width: 70px;
+      left: -127px;
+      top: 19%;
+    }
+  }
+
   .extras__wrapper {
     display: flex;
-    margin-bottom: 86px;
+
+    max-width: 1220px;
+    margin: 0 auto 86px;
   }
 
   .extras__item {
