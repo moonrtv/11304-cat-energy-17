@@ -33,23 +33,23 @@ img {
   overflow: hidden;
 }
 
-input[type=radio],
-input[type=checkbox] {
+input[type="radio"],
+input[type="checkbox"] {
   position: absolute;
   z-index: -1;
   opacity: 0;
   margin: 10px 0 0 7px;
 }
 
-input[type=radio] + label,
-input[type=checkbox] + label {
+input[type="radio"] + label,
+input[type="checkbox"] + label {
   position: relative;
   padding: 0 0 0 31px;
   cursor: pointer;
 }
 
-input[type=radio] + label:before {
-  content: '';
+input[type="radio"] + label::before {
+  content: "";
   position: absolute;
   left: 0;
   top: -3px;
@@ -57,34 +57,34 @@ input[type=radio] + label:before {
   height: 30px;
   border: 1px solid #d1d1d1;
   border-radius: 50%;
-  background: #FFF;
+  background: #ffffff;
 }
 
-input[type=radio] + label:after {
-  content: '';
+input[type="radio"] + label::after {
+  content: "";
   position: absolute;
   top: 7px;
   left: 10px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #9FD468;
+  background: #9fd468;
   opacity: 0;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-input[type=radio]:checked + label:after {
+input[type="radio"]:checked + label::after {
   opacity: 1;
 }
 
-input[type=radio]:hover + label:before,
-input[type=radio]:focus + label:before {
+input[type="radio"]:hover + label::before,
+input[type="radio"]:focus + label::before {
   content: "";
   border-color: #bcbcbc;
 }
 
 
-input[type=checkbox] + label::before {
+input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -95,13 +95,13 @@ input[type=checkbox] + label::before {
   border: 1px solid #d1d1d1;
 }
 
-input[type=checkbox]:hover + label::before,
-input[type=checkbox]:focus + label::before {
+input[type="checkbox"]:hover + label::before,
+input[type="checkbox"]:focus + label::before {
   content: "";
   border-color: #bcbcbc;
 }
 
-input[type=checkbox]:checked + label::after {
+input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -110,10 +110,10 @@ input[type=checkbox]:checked + label::after {
   height: 16px;
 
   background-image: url("../img/icon-tick.svg");
-  color: #9FD468;
+  color: #9fd468;
 }
 
-input[type=checkbox]:active + label::before,
-input[type=checkbox]:active + label::after {
+input[type="checkbox"]:active + label::before,
+input[type="checkbox"]:active + label::after {
   opacity: 0.3;
 }
