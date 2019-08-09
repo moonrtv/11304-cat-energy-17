@@ -1,0 +1,24 @@
+.extras-form__item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .extras-form__label {
+    @include pform-label;
+
+    padding-left: 49px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .extras-form__item {
+    .extras-form__label {
+      font-size: 20px;
+      line-height: 20px;
+
+      padding-left: 49px;
+    }
+  }
+}

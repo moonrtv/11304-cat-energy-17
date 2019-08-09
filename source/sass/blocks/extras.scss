@@ -9,7 +9,19 @@
 .extras__title {
   @include title(24px, 24px);
   font-weight: 400;
+  position: relative;
+  color: $black-title;
   margin: 32px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 3px;
+    background-color: #68b738;
+    top: 64%;
+    right: -20px;
+  }
 }
 
 .extras__item {
@@ -17,10 +29,10 @@
   flex-direction: column;
 
   padding: 16px 0;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid #e6e6e6;
 
   &:last-child {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -32,6 +44,7 @@
 .extras__info-title {
   @include title(16px, 16px);
   font-weight: normal;
+  color: #222222;
   text-transform: uppercase;
 }
 
@@ -86,9 +99,31 @@
     margin-bottom: 72px;
   }
 
+  .extras__item {
+    padding: 26px 40px 26px;
+    border: 1px solid #e6e6e6;
+  }
+
   .extras__title {
     @include title(36px, 36px);
     margin: 82px 0;
+    margin-left: 36px;
+
+    &::after {
+      width: 331px;
+      right: -30px;
+      top: 73%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+      top: 73%;
+      left: -66px;
+    }
   }
 
   .extras__info {
@@ -120,17 +155,30 @@
     @include fields(110px, 110px);
   }
 
-  .extras__wrapper {
-    display: flex;
-    margin-bottom: 86px;
+  .extras__title {
+    max-width: 1220px;
+    margin: 0 auto;
+
+    padding-bottom: 80px;
+
+    &::after {
+      width: 958px;
+      right: -127px;
+      top: 19%;
+    }
+
+    &::before {
+      width: 70px;
+      left: -127px;
+      top: 19%;
+    }
   }
 
-  .extras__wrapper-item {
+  .extras__wrapper {
     display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    max-width: 895px;
-    margin-bottom: 0;
+
+    max-width: 1220px;
+    margin: 0 auto 86px;
   }
 
   .extras__item {
@@ -139,6 +187,24 @@
     align-items: center;
 
     max-width: 895px;
+
+    padding: 18px 0;
+
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #e6e6e6;
+
+    &:last-child {
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
+
+  .extras__wrapper-item {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    max-width: 895px;
+    margin-bottom: 0;
   }
 
   .extras__info {

@@ -1,0 +1,39 @@
+.purpose-form {
+  padding-bottom: 28px;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.purpose-form__item {
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .purpose-form__label {
+    @include pform-label(16px, 18px);
+
+    padding-left: 47px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .purpose-form {
+    border: 1px solid #e6e6e6;
+    padding: 26px 25px;
+  }
+
+  .purpose-form__item {
+    .purpose-form__label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .purpose-form {
+    padding: 28px 28px 24px 28px;
+  }
+}

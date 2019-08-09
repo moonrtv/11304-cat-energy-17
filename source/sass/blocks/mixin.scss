@@ -7,3 +7,29 @@
   font-size: $font-size;
   line-height: $line-height;
 }
+
+@mixin pform-label($font-size: 16px, $line-height: 20px) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+
+  margin: 0;
+}
+
+
+@mixin pform-input($font-size: 16px, $line-height: 20px) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+
+  flex-grow: 1;
+  border: 1px solid #e6e6e6;
+  margin: 0;
+  padding: 12px;
+}

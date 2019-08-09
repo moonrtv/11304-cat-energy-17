@@ -12,6 +12,8 @@
 .categories__title {
   font-size: 24px;
   line-height: 37px;
+  font-weight: normal;
+  color: $black-title;
 
   text-transform: uppercase;
 }
@@ -21,6 +23,7 @@
 
   font-size: 14px;
   line-height: 18px;
+  color: #444444;
 
   margin-top: 24px;
   margin-bottom: 26px;
