@@ -13,12 +13,38 @@
 }
 
 @media (min-width: $tablet-width) {
+  .extras-form {
+    .program-form__title {
+      padding: 78px 0 60px;
+    }
+
+    @include fields(50px, 47px);
+  }
+
   .extras-form__item {
+    display: inline-block;
+    width: 45%;
+
     .extras-form__label {
       font-size: 20px;
       line-height: 20px;
 
       padding-left: 49px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extras-form {
+    padding: 0;
+
+    .extras-form__item {
+      width: 242px;
+      padding-right: 80px;
+
+      &:last-child {
+        padding-right: 0;
+      }
     }
   }
 }

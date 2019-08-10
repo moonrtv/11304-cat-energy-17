@@ -100,10 +100,18 @@
     .button {
       font-size: 20px;
       line-height: 20px;
+
+      width: 283px;
+      margin-right: 60px;
     }
+
+    margin: 34px 0 52px;
+    @include fields(50px, 47px);
   }
 
   .program-form__legend {
+    display: initial;
+
     font-size: 16px;
   }
 }
@@ -112,6 +120,8 @@
   .program-form {
     max-width: 1220px;
     margin: 0 auto;
+
+    @include fields(110px, 110px);
   }
 
   .program-form__container {
@@ -129,5 +139,18 @@
   .program-form__title {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .program-form__container {
+    padding: 0;
+  }
+
+  .program-form__order {
+    padding: 0;
+
+    .button {
+      width: 570px;
+      margin-right: 80px;
+    }
   }
 }

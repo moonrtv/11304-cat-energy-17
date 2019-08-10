@@ -35,3 +35,42 @@
     padding-right: 35px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-form {
+    .program-form__title {
+      padding: 80px 0 78px;
+    }
+
+    .program-form__input {
+      width: 100%;
+    }
+
+    @include fields(50px, 47px);
+  }
+
+  .contacts-form__item {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-form {
+    padding: 0;
+
+    .program-form__input {
+      width: 73%;
+    }
+  }
+
+  .contacts-form__item {
+    display: inline-block;
+
+    width: 570px;
+    margin-bottom: 0;
+
+    &:first-child {
+      padding-right: 80px
+    }
+  }
+}
