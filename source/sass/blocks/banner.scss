@@ -70,7 +70,9 @@
 @media (min-width: $tablet-width) {
   .banner {
     height: 852px;
-    margin-left: 120px;
+    width: auto;
+    padding: 2px 0 0 99px;
+    margin: 0 auto;
 
     &::before {
       display: none;
@@ -109,9 +111,9 @@
 
   .banner__image {
     position: absolute;
-    width: 680px;
-    left: -47px;
-    top: 220px;
+    width: 710px;
+    left: 14px;
+    top: 227px;
     z-index: -1;
   }
 }
