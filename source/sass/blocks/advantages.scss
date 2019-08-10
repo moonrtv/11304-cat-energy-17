@@ -38,7 +38,7 @@
   background-color: #68b738;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 60px;
     height: 60px;
@@ -128,22 +128,22 @@
     }
 
     &:nth-child(1)::after {
-      content: '1';
+      content: "1";
       right: 22px;
     }
 
     &:nth-child(2)::after {
-      content: '2';
+      content: "2";
       right: -2px;
     }
 
     &:nth-child(3)::after {
-      content: '3';
+      content: "3";
       right: -2px;
     }
 
     &:nth-child(4)::after {
-      content: '4';
+      content: "4";
       right: -1px;
     }
   }
@@ -173,7 +173,7 @@
     background-color: #68b738;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 80px;
       height: 80px;
