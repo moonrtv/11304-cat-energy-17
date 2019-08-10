@@ -154,6 +154,7 @@
   .extras {
     max-width: 1220px;
     margin: 0 auto;
+
     @include fields(110px, 110px);
   }
 
