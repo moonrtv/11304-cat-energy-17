@@ -78,7 +78,18 @@
 
 @media (min-width: $desktop-width) {
   .example {
+    display: flex;
+
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 68px;
+
     @include fields(110px, 110px);
+  }
+
+  .example__container {
+    display: flex;
+    flex-direction: column;
   }
 
   .example__title {
